@@ -12,7 +12,7 @@
 Este projeto tem como principal objetivo demonstrar e comparar a eficiência de duas estruturas de dados fundamentais:
 
 1.  **Árvore de Busca Binária (BST):** Uma estrutura de nó simples e rápida para inserção em cenários ideais.
-2.  **Árvore AVL:** Uma BST auto-balanceada que garante que as operações de inserção, busca e remoção mantenham uma complexidade de tempo de $O(\log n)$, evitando o pior caso de uma árvore degenerada ($O(n)$) que pode ocorrer em uma BST comum.
+2.  **Árvore AVL:** Uma BST auto-balanceada que garante que as operações de inserção, busca e remoção mantenham uma complexidade de tempo de O(log n), evitando o pior caso de uma árvore degenerada O(n) que pode ocorrer em uma BST comum.
 
 A comparação é realizada utilizando um conjunto de dados do mundo real para analisar o desempenho prático de cada árvore em operações de inserção e busca.
 
@@ -30,7 +30,7 @@ O código-fonte está organizado da seguinte forma (assumindo o pacote `gov` com
     * Ler o arquivo `.csv`.
     * Instanciar as árvores AVL e BST.
     * Processar os dados e inseri-los em ambas as árvores.
-    * (Provavelmente) Medir o tempo e a performance das operações para fins de comparação.
+    * Medir o tempo e a performance das operações para fins de comparação.
 * `src/gov/AVL.java`: Implementação da estrutura da Árvore AVL, incluindo as lógicas de rotação (simples e dupla) para manter o fator de balanceamento.
 * `src/gov/BST.java`: Implementação da estrutura da Árvore de Busca Binária padrão.
 * `src/gov/Node.java`: Classe que representa o nó básico utilizado por ambas as árvores, contendo os dados e referências aos filhos (e, possivelmente, a altura, para a AVL).
@@ -42,7 +42,7 @@ O código-fonte está organizado da seguinte forma (assumindo o pacote `gov` com
     git clone [https://github.com/SEU-USUARIO/analise-avl-bst-imigrantes.git](https://github.com/SEU-USUARIO/analise-avl-bst-imigrantes.git)
     ```
 2.  **Abra na sua IDE:**
-    * Importe o projeto em uma IDE Java, como o Eclipse (para o qual o projeto parece estar configurado).
+    * Importe o projeto em uma IDE Java (esse projeto foi desenvolvido utilizando ECLIPSE).
 3.  **Verifique o Caminho do CSV:**
     * Abra o arquivo `src/gov/Main.java`.
     * Localize a linha que lê o arquivo `bancocrai2014a2019...csv`.
@@ -53,9 +53,9 @@ O código-fonte está organizado da seguinte forma (assumindo o pacote `gov` com
 ## 📈 Análise e Resultados
 
 A análise completa dos resultados está documentada em:
-`Análise da Base de Dados do Centro de Referência e Atendimento para Imigrantes.docx`.
+`Análise da Base de Dados do Centro de Referência e Atendimento para Imigrantes.pdf`.
 
-Em resumo, espera-se que a **Árvore AVL**, apesar de possuir um tempo de *inserção* ligeiramente maior (devido à sobrecarga de verificações de balanceamento e rotações), mantenha uma altura significativamente menor e, consequentemente, um tempo de *busca* muito mais rápido e consistente ($O(\log n)$) em comparação com a **BST**, que pode degenerar e se aproximar de um desempenho de $O(n)$ dependendo da ordem de entrada dos dados.
+Em resumo, espera-se que a **Árvore AVL**, apesar de possuir um tempo de *inserção* ligeiramente maior (devido à sobrecarga de verificações de balanceamento e rotações), mantenha uma altura significativamente menor e, consequentemente, um tempo de *busca* muito mais rápido e consistente O(log n) em comparação com a **BST**, que pode degenerar e se aproximar de um desempenho de O(n) dependendo da ordem de entrada dos dados.
 
 ## 📄 Licença
 
